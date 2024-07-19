@@ -1,0 +1,24 @@
+h1 {
+  color: beige;
+  background-color: darkslategrey;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 677;
+}
+
+.tray-holder{
+  position: relative;
+  top: 90px;
+  background-color: beige;
+  z-index: 1;
+}
+
+.tray {
+  text-align: center;
+  color: darkslategrey;
+  justify-content: space-between;
+}
+.tray:last-child{
+  font-weight: bolder;
+}

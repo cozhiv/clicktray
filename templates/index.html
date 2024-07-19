@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sockets</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='bodystyle.css')}}">
+</head>
+<body>
+<mouse-tray></mouse-tray>
+<!-- <article>
+    <h2>Sample heading</h2>
+    <p>here</p>
+    
+    <p is="click-tray"></p>
+</article>
+
+    <h2 id='coordinates'></h2> -->
+    <!-- <script>
+        const ws = new WebSocket("ws://127.0.0.1:1916/");
+        let x;
+        let htmlChunk = 'DATA<br /> ';
+        console.log(ws);
+        ws.onmessage = function(event){
+            console.log("[Message received from server]", event.data)
+            htmlChunk += "<br /> message received ["+event.data+']';
+            document.getElementById("coordinates").innerHTML=htmlChunk;
+        };
+    </script> -->
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+
+</body>
+</html>
