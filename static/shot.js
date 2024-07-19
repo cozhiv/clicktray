@@ -21,13 +21,17 @@ class Shot extends HTMLElement {
       yourPic.setAttribute('class', 'snap')
       yourPic.setAttribute('id', 'snap1');
       yourPic.setAttribute('src', '')
+      const coordinates = document.createElement('div');
+      coordinates.setAttribute('class', 'coordinates');
       holder.appendChild(yourPic);
+      holder.appendChild(coordinates)
       window.addEventListener('load', async function(){
         const pic1 = document.getElementById("snap1");
         const currentUrl = window.location.toString();
         const picNum = currentUrl.substring(currentUrl.lastIndexOf("/") + 1)
         console.log(picNum)
         const picAndXY = await getData(picNum);
+        coordinates.textContent = `Clicked on (${picAndXY[0]} : ${picAndXY[1]})`
         yourPic.setAttribute("src", `data:image/jpeg;charset=utf-8;base64, ${picAndXY[2].substring(2,picAndXY[2].length-1)}`);
       })
   }

@@ -22,3 +22,11 @@ h1 {
 .tray:last-child{
   font-weight: bolder;
 }
+
+.coordinates {
+  display :inline-block;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: larger;
+  color:darkslategrey;
+  background-color: beige;
+}
