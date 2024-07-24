@@ -21,7 +21,7 @@ or
 'cd' into folder 'clicktray'
 <br />
 <code>cd clicktray</code>
-## create virtual environment (example with venv):
+## Create virtual environment (example with venv):
 <code>python3 -m venv venv</code>
 
 ## Activate it
