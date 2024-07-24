@@ -44,7 +44,7 @@ Check the whole raw data on
 <br />
 localhost:5000/snaps
 
-## Raw data stored in db for specific click.
+## Raw data for specific click can be accessed trough the endpoints as example:
 Check pic stored in db on
 <br />
 localhost:5000/snap <br />
@@ -53,9 +53,11 @@ localhost:5000/snap/2 <br />
 localhost:5000/snap/3 <br />
 localhost:5000/snap/number <br />
 
-## Render specific picture. 
-The number of the pic is the number of the recorded click.<br />
+## Render a picture in browser. 
+The number of the pic is the number of the recorded click at<br />
 <code>localhost:5000/shot/numberofpic </code><br />
+<br />
+Examples:<br />
 localhost:5000/shot/1 <br />
 localhost:5000/shot/2 <br />
 
