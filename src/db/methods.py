@@ -22,6 +22,7 @@ def read_coordinates():
     return rows
 
 def read_single_record(num):
+    """Read single record from database"""
     connection = sqlite3.connect(db_name)
     cursor = connection.cursor()
     row = cursor.execute("SELECT * FROM {0} LIMIT {1} OFFSET {2}".format(table_name, num, int(num)+1)).fetchall()
@@ -33,6 +34,7 @@ def read_single_record(num):
 
 
 def find_latest_record():
+    "Find the number of the latest record"
     connection = sqlite3.connect(db_name)
     cursor = connection.cursor()
     last_snap_num = cursor.execute(f"SELECT COUNT(*) FROM {table_name}").fetchone()[0]
@@ -40,6 +42,7 @@ def find_latest_record():
 
 
 def read_latest_record():
+    """Find the latest record"""
     connection = sqlite3.connect(db_name)
     cursor = connection.cursor()
     last_snap_num = cursor.execute(f"SELECT COUNT(*) FROM {table_name}").fetchone()[0]
