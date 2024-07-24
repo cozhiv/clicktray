@@ -12,13 +12,18 @@ Tested and developed with venv; Ubuntu 23.
 ## Getting started
 Copy url and clone,
 <br />
+SSH:
+<br />
 <code>git clone git@github.com:cozhiv/clicktray.git</code>
 <br />
-or if you're using https:
+ or HTTPS:
 <br />
 <code>git clone https://github.com/cozhiv/clicktray.git</code>
 <br />
-'cd' into folder 'clicktray'
+ or GitHub CLI:
+<br />
+<code>gh repo clone cozhiv/clicktray</code><br />
+then 'cd' into folder 'clicktray'
 <br />
 <code>cd clicktray</code>
 ## Create virtual environment (example with venv):
