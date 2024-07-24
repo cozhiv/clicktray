@@ -1,52 +1,51 @@
 # Clicktray
 Tracks your mouse moves and makes a photo when you click, using camera. This version is still in development mode.
-## requirements
+## Requirements
 python >= 3.7
 virtual environment for python such as:
 - venv
 - env
 - pipenv
-- etc.
-tested and developed with venv
-tested on Ubuntu 23
+- etc. <bra />
+Tested and developed with venv; Ubuntu 23.
 
 ## Getting started
 Copy url and clone,
 <br />
-<code>git clone git@gitlab.com:cozhiv/clicktrack.git</code>
+<code>git clone git@github.com:cozhiv/clicktray.git</code>
 <br />
 or
 <br />
 <code>git clone https://gitlab.com/cozhiv/clicktrack.git</code>
 <br />
-'cd' into folder 'clicktrack'
+'cd' into folder 'clicktray'
 <br />
-<code>cd clicktrack</code>
+<code>cd clicktray</code>
 ## create virtual environment (example with venv):
 <code>python3 -m venv venv</code>
 
-# activate it
+## Activate it
 <code>source venv/bin/activate</code>
 
-## install the packages
+## Install the packages
 <code>pip install -r requirements.txt</code>
 
-## run the app
+## Run the app
 <code>python app.py</code>
 
-## live mouse coordinates
+## Live mouse coordinates
 turn your browser to localhost:5000
 
-## snaps
+## Snaps
 The mouse makes a snap everytime you use the left click.
 
-## raw data
-Endpoint to check the whole raw data is 
+## Raw data
+Check the whole raw data on
 <br />
 localhost:5000/snaps
 
 ## Raw data stored in db for specific click.
-Endpoint to check pic stored in db on
+Check pic stored in db on
 <br />
 localhost:5000/snap <br />
 localhost:5000/snap/1 <br />
