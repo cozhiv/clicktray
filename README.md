@@ -59,7 +59,7 @@ localhost:5000/snap/3 <br />
 localhost:5000/snap/number <br />
 
 ## Render a picture in browser. 
-The number of the pic is the number of the recorded click at<br />
+The number in the url corresponds to the number of the recorded click and picture. <br />
 <code>localhost:5000/shot/numberofpic </code><br />
 <br />
 Examples:<br />
