@@ -14,9 +14,9 @@ Copy url and clone,
 <br />
 <code>git clone git@github.com:cozhiv/clicktray.git</code>
 <br />
-or
+or if you're using https:
 <br />
-<code>git clone https://gitlab.com/cozhiv/clicktrack.git</code>
+<code>git clone https://github.com/cozhiv/clicktray.git</code>
 <br />
 'cd' into folder 'clicktray'
 <br />
