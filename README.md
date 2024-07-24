@@ -1,4 +1,4 @@
-# clicktrack
+# Clicktray
 Tracks your mouse moves and makes a photo when you click, using camera. This version is still in development mode.
 ## requirements
 python >= 3.7
@@ -57,6 +57,6 @@ localhost:5000/snap/number <br />
 ## Render specific picture. 
 The number of the pic is the number of the recorded click.<br />
 <code>localhost:5000/shot/numberofpic </code><br />
-localhost:5000/snap/1 <br />
-localhost:5000/snap/2 <br />
+localhost:5000/shot/1 <br />
+localhost:5000/shot/2 <br />
 
