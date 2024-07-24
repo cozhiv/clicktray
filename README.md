@@ -1,5 +1,5 @@
 # Clicktray
-Tracks your mouse moves and makes a photo when you click, using the first camera on your device. It doesn't need special root permissions to run.
+Tracks your mouse moves and makes a photo when you click using the first camera on your device. It doesn't need special root permissions to run.
 ## Requirements
 python >= 3.7
 virtual environment for python such as:
