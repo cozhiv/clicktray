@@ -26,14 +26,15 @@ class Shot extends HTMLElement {
       holder.appendChild(yourPic);
       holder.appendChild(coordinates)
       window.addEventListener('load', async function(){
-        const pic1 = document.getElementById("snap1");
+        const uri = document.getElementById("host-uri").textContent;
+        console.log(uri)
         const currentUrl = window.location.toString();
         let picNum = currentUrl.substring(currentUrl.lastIndexOf("/") + 1)
         console.log(picNum)
         if (picNum === "shot") {
           picNum = undefined;
         }
-        const picAndXY = await getData(picNum);
+        const picAndXY = await getData(picNum, uri);
         coordinates.textContent = `Clicked on (${picAndXY[0]} : ${picAndXY[1]})`
         yourPic.setAttribute("src", `data:image/jpeg;charset=utf-8;base64, ${picAndXY[2].substring(2,picAndXY[2].length-1)}`);
       })
@@ -42,13 +43,13 @@ class Shot extends HTMLElement {
 
 customElements.define('one-shot', Shot);
 
-async function getData(p) {
+async function getData(p, uri) {
     if (p) {
       p = `/${p}`
     }  else {
       p = "";
     }
-    const url = `http://localhost:5000/snap${p}`;
+    const url = `${uri}/snap${p}`;
     try {
       const response = await fetch(url);
       if (!response.ok) {

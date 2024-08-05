@@ -1,3 +1,4 @@
+"""For coroutine managment import asyncio"""
 import asyncio
 import threading
 import sqlite3
@@ -12,12 +13,6 @@ app.register_blueprint(show_data_bp)
 connection = sqlite3.connect(db_name)
 cursor = connection.cursor()
 cursor.execute(create_table)
-
-@app.route("/")
-def index():
-    """Render the client connected to websocket
-    showing the mousemove coordinates."""
-    return render_template("index.html")
 
 socket_thread = threading.Thread(target=asyncio.run, args=(serve_socket(),))
 socket_thread.start()

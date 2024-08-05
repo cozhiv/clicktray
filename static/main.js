@@ -16,7 +16,8 @@ class MouseTray extends HTMLElement {
     @import "static/styles.css";
     </style>`;
     this.shadowRoot.appendChild(template.content.cloneNode(true));
-    const ws = new WebSocket('ws://127.0.0.1:1916/');
+    const uri = document.getElementById("websocket-uri").textContent;
+    const ws = new WebSocket(`ws://${uri}/`);
     console.log(ws);
     ws.onmessage = function(event){
       console.log('[Message received from server]', event.data)
