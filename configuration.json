@@ -1,0 +1,15 @@
+{
+  "http": 
+    {
+      "endpoints": {
+        "raw": "snap",
+        "picure": "shot"
+    }
+  },
+  "websockets": {
+    "mousemove": {
+      "ip":"127.0.0.1",
+      "port": 1916
+    }
+  }
+}
